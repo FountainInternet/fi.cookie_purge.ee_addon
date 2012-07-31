@@ -44,7 +44,9 @@ Destroys cookies set by ExpressionEngine
 
 This extension destroys specified cookies that are automatically set by ExpressionEngine, unless the user has indicated their acceptance to receive them. It helps ExpressionEngine sites to comply with The Privacy and Electronic Communications (EC Directive) Regulations 2003.
 
-After installing the extension using the default settings, anonymous users will find that the three standard ExpressionEngine cookies are deleted after they have been set by ExpressionEngine. If you are logged into ExpressionEngine, other ExpressionEngine cookies will remain on your computer.
+After installing the extension using the default settings, anonymous users for whom the "accept" cookie has not been set will find that the three standard ExpressionEngine cookies are deleted (the cookies are created by ExpressionEngine first and then deleted by FI Cookie Purge). If you are logged into ExpressionEngine, other ExpressionEngine cookies will remain on your computer.
+
+Setting the "accept" cookie is outside the scope of this extension. This would typically be done after the user has agreed to received cookies via some kind of prompt displayed in your website (e.g. a banner or overlay).
 
 ## Display of Copyright Notices
 
